@@ -30,7 +30,7 @@ const generateCard = ({id, url, title, type, content}) =>
 					</button>
 				</div>
 			</div>
-			<img src="${url || "http://driverphotoblog.net/wp-content/uploads/2020/10/Blogging-for-Small-Business-Owners.jpg"}" class="card-img-top" alt="image">
+			<img src="${url || "./assets/blogging.jpg"}" class="card-img-top" alt="image">
 			<div class="card-body">
 				<h5 class="card-title">${title}</h5>
 				<p class="card-text">${content}</p>
@@ -99,7 +99,7 @@ const saveEdits = (e) => {
 const generateBlogModal = ({id, url, title, type, content}) => {
 	const date = new Date(parseInt(id));
 	return `<div id=${id}>
-		<img src="${url || "https://previews.123rf.com/images/underverse/underverse1506/underverse150600803/41162151-task-word-on-notes-paper-with-cork-background-.jpg"}" alt="image" class="w-100">
+		<img src="${url || "./assets/blogging.jpg"}" alt="image" class="w-100">
 		<strong class="text-sm text-muted">Written on ${date.toDateString()}</strong>
 		<div class="d-flex justify-content-between align-items-center align-content-center">
 			<h5 class="modal-title">${title}</h5>

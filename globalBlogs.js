@@ -5,7 +5,7 @@ globalBlogsDiv = document.getElementById("globalBlogsDiv");
 
 const blog1 = {
 	id: `${Date.now() + ++i}`,
-	url: "http://driverphotoblog.net/wp-content/uploads/2020/10/Blogging-for-Small-Business-Owners.jpg",
+	url: "./assets/blogging.jpg",
 	title: "Lorem Ipsum",
 	type: "Science",
 	content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -14,7 +14,7 @@ globalBlogs.push(blog1);
 
 const blog2 = {
 	id: `${Date.now() + ++i}`,
-	url: "http://driverphotoblog.net/wp-content/uploads/2020/10/Blogging-for-Small-Business-Owners.jpg",
+	url: "./assets/blogging.jpg",
 	title: "Lorem Ipsum 2",
 	type: "Science",
 	content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -23,7 +23,7 @@ globalBlogs.push(blog2);
 
 const blog3 = {
 	id: `${Date.now() + ++i}`,
-	url: "http://driverphotoblog.net/wp-content/uploads/2020/10/Blogging-for-Small-Business-Owners.jpg",
+	url: "./assets/blogging.jpg",
 	title: "Lorem Ipsum 3",
 	type: "Science",
 	content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -33,7 +33,7 @@ globalBlogs.push(blog3);
 const generateGlobalCards = ({ id, url, title, type, content }) =>
 	`<div class="col-md-6 col-lg-4 mt-4" id=${id}>
 		<div class="card">
-			<img src="${url || "http://driverphotoblog.net/wp-content/uploads/2020/10/Blogging-for-Small-Business-Owners.jpg"}" class="card-img-top" alt="image">
+			<img src="${url || "./assets/blogging.jpg"}" class="card-img-top" alt="image">
 			<div class="card-body">
 				<h5 class="card-title">${title}</h5>
 				<p class="card-text text-truncate">${content}</p>
