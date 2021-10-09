@@ -79,7 +79,7 @@ const saveEdits = (e) => {
 	const targetID = e.getAttribute("name");
 	const updatedBlog = {
 		id: targetID,
-		url: document.getElementsByTagName("img")[0].getAttribute("src"),
+		url: e.parentNode.parentNode.childNodes[3].getAttribute("src"),
 		title: e.parentNode.parentNode.childNodes[5].childNodes[1].innerHTML,
 		type: e.parentNode.parentNode.childNodes[5].childNodes[5].innerHTML,
 		content: e.parentNode.parentNode.childNodes[5].childNodes[3].innerHTML,
